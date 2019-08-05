@@ -4,11 +4,11 @@ def rna_translate(seq):
 """A rna translation machine using a dispatch dictionary and deque"""
     
     bases = list(seq) # prepare list of ribonucleic bases
-    bases_q = deque(aminos)
+    bases_q = deque(bases)
     codon = []
     protein = []
     
-    def ribosome(s):
+    def ribosome(s): # processes the bases queue
         if len(bases_q) == 0:
             return protein
         while len(codon) <= 3:
