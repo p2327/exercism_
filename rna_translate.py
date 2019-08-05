@@ -23,7 +23,7 @@ def rna_translate(seq):
         stop_codons = ['UAA', 'UAG', 'UGA']
         if c in stop_codons:
             return protein
-        protein += [dispatch[c]]
+        protein += [dispatch[c]] # add the amino to our protein sequence
         codon = [] # reset the codon
         return ribosome(codon)
         
