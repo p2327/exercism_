@@ -1,7 +1,8 @@
+
 from collections import deque
 
 def rna_translate(seq):
-"""A rna translation machine using a dispatch dictionary and deque"""
+    """A rna translation machine using a dispatch dictionary and deque"""
     
     bases = list(seq) # prepare list of ribonucleic bases
     bases_q = deque(bases)
@@ -36,7 +37,7 @@ def rna_translate(seq):
                 'UAC':'Tyrosine',
                 'UGU':'Cysteine',
                 'UGC':'Cysteine',
-                'UGG':'Tryptophan,
+                'UGG':'Tryptophan',
                 'UAA':'STOP',
                 'UAG':'STOP',
                 'UGA':'STOP'
