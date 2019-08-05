@@ -1,7 +1,7 @@
 from collections import deque
 
 def rna_translate(seq):
-"""A rna translation machine using a dispartch dictionary and deque"""
+"""A rna translation machine using a dispatch dictionary and deque"""
     
     bases = list(seq) # prepare list of ribonucleic bases
     bases_q = deque(aminos)
